@@ -6,7 +6,7 @@ function App() {
   const [selectedGenre, setSelectedGenre] = useState('All');
 
   useEffect(() => {
-    fetch('fetch('https://movie-catalog-copy-production.up.railway.app/api/movies')')
+    fetch('https://movie-catalog-copy-production.up.railway.app/api/movies')
       .then(res => res.json())
       .then(data => {
         setMovies(data);
